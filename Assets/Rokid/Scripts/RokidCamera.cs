@@ -40,7 +40,7 @@ public class RokidCamera : MonoBehaviour, IWASVPSCamera
 
         if (WebCamTexture.devices.Length == 0)
         {
-            Debug.LogError("[RokidCamera] Камера не найдена на устройстве.");
+            Debug.LogError("[RokidCamera] Camera not found.");
             _isReady = false;
             yield break;
         }
@@ -65,7 +65,7 @@ public class RokidCamera : MonoBehaviour, IWASVPSCamera
         _webcam = new WebCamTexture(WebCamTexture.devices[0].name, _width, _height, 30);
         _webcam.Play();
         _isReady = true;
-        Debug.Log($"[RokidCamera] Камера инициализирована: {_width}x{_height}");
+        Debug.Log($"[RokidCamera] The camera has been initialized: {_width}x{_height}");
     }
 
     public bool IsCameraReady()
@@ -172,13 +172,11 @@ public class RokidCamera : MonoBehaviour, IWASVPSCamera
 
     public Vector2 GetFocalPixelLength()
     {
-        // TODO Заглушка
         return new Vector2(900f, 900f);
     }
 
     public Vector2 GetPrincipalPoint()
     {
-        // TODO Заглушка
         return new Vector2(_width / 2f, _height / 2f);
     }
 }

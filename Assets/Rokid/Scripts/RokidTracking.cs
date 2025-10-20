@@ -41,7 +41,6 @@ public class RokidTracking : MonoBehaviour, IWASVPSTracking
 
     public void ResetTracking()
     {
-        Debug.Log("[RokidTracking] Reset tracking.");
         _trackingData = new WASVPSTrackingData();
     }
 }
