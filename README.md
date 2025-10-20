@@ -1,1 +1,2 @@
 # rokid-vps
+Для работы проекта необходим пакет [Rokid SDK UXR 3.0](https://custom.rokid.com/prod/rokid_web/c88be4bcde4c42c0b8b53409e1fa1701/pc/us/846a79e0bae540a393abd850f3b14716.html?documentId=e7936c425bcf4e39b0e9fd0c9f389f4c).
